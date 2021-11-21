@@ -40,7 +40,6 @@ html, body {
 }
 
 .header {
-    border: 1px solid #c4c4c4;
     display: grid;
     grid-template-columns: 260px 185px 200px 330px repeat(4, 80px);
     grid-template-rows: 90px;
@@ -56,7 +55,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #c4c4c4;
+    border-right: 1px solid rgb(196 196 196 / 50%);
 }
 
 .header__tel {
@@ -64,7 +63,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #c4c4c4;
+    border-right: 1px solid rgb(196 196 196 / 50%)
 }
 
 .header__tel * {
@@ -77,7 +76,7 @@ html, body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-right: 1px solid #c4c4c4;
+    border-right: 1px solid rgb(196 196 196 / 50%);
 }
 
 .s__container {
@@ -89,7 +88,7 @@ html, body {
 }
 
 .header__button {
-    border-right: 1px solid #c4c4c4;
+    border-right: 1px solid rgb(196 196 196 / 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,8 +104,18 @@ html, body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .hb__eye {
     margin-right: 10px;
+}
+
+.header__sn {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4FBFA5;
+    border-right: 1px solid rgb(196 196 196 / 50%);
 }
