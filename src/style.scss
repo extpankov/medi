@@ -202,10 +202,19 @@ html, body {
     text-align: center;
     color: white;
     cursor: pointer;
-    border: 1px solid rgba(196,196,196,0.5);
 }
 
 .bl__button:hover {
     background-color: $accent-2;
     transition: 0.2s;
+}
+
+.slider__case-img {
+    width: 746px;
+    height: 533px;
+}
+
+.main__main-cont {
+    display: flex;
+    justify-content: space-between;
 }
