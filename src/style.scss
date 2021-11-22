@@ -210,8 +210,12 @@ html, body {
 }
 
 .slider__case-img {
-    width: 746px;
+    width: 746px !important;
     height: 533px;
+}
+
+.owl-carousel {
+    width: 746px !important;
 }
 
 .main__main-cont {
