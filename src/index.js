@@ -13,3 +13,11 @@ $(document).ready(function(){
         autoWidth: true
     });
 });
+
+$('.rnc__case').hover(
+    function() {
+    $(this).addClass('rnc__case-active')
+}, function() {
+    $(this).removeClass('rnc__case-active')
+}
+)

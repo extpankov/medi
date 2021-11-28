@@ -163,6 +163,11 @@ html, body {
     color: white;
 }
 
+.main__t-a {
+    text-decoration: none;
+    color: white;
+}
+
 .main__btn {
     height: 100%;
     width: 175px;
@@ -304,11 +309,12 @@ html, body {
     padding: 50px 40px 0 35px;
 }
 
-.lnc__chapter {
+.main__chapter {
     height: 40px;
     background-color: $accent-2;
     padding: 10px 15px;
     cursor: default;
+    color: white;
 }
 
 .lnc__name {
@@ -354,4 +360,57 @@ html, body {
     width: 539px;
     height: 154px;
     background-image: url(./img/slider_1.png);
+}
+
+.mc__right-news-case {
+    height: 526px;
+    color: black;
+    margin-left: 100px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.rnc__inner {
+    height: 485px;
+}
+
+.rnc__main-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 460px;
+}
+
+.rnc__case {
+    display: flex;
+    width: 214px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.rnc__number {
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.rnc__text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 150%;
+    margin-left: 20px;
+}
+
+.rnc__case-active {
+    width: 100%;
+}
+
+.rnc__case-active .rnc__number {
+    font-size: 96px;
+    color: $accent-1;
+}
+
+.rnc__case-active .rnc__text {
+    color: black;
+    font-size: 28px;
 }
