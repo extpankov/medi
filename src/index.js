@@ -16,8 +16,14 @@ $(document).ready(function(){
 
 $('.rnc__case').hover(
     function() {
+    $('.rnc__case').removeClass('rnc__case-active')
     $(this).addClass('rnc__case-active')
 }, function() {
-    $(this).removeClass('rnc__case-active')
+    $('.rnc__case').removeClass('rnc__case-active')
+    setTimeout(() => { 
+        if ($('.rnc__case-active').length == 0) {
+            $('.rnc__case').first().addClass('rnc__case-active')
+        }
+    }, 10);
 }
 )

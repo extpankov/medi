@@ -388,19 +388,6 @@ html, body {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.rnc__number {
-    font-size: 48px;
-    line-height: 150%;
-}
-
-.rnc__text {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    line-height: 150%;
-    margin-left: 20px;
-}
-
 .rnc__case-active {
     width: 100%;
 }
@@ -413,4 +400,30 @@ html, body {
 .rnc__case-active .rnc__text {
     color: black;
     font-size: 28px;
+}
+
+.rnc__case-active .rnc__img {
+    display: block;
+}
+
+.rnc__number {
+    font-size: 48px;
+    line-height: 150%;
+}
+
+.rnc__text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 150%;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.rnc__img {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
