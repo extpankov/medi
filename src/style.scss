@@ -2,8 +2,8 @@
     font-family: 'Gilroy';
     src: url('./fonts/Gilroy-Regular.eot');
     src: url('./fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Gilroy-Regular.woff') format('woff'),
-    url('./fonts/Gilroy-Regular.ttf') format('truetype');
+        url('./fonts/Gilroy-Regular.woff') format('woff'),
+        url('./fonts/Gilroy-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -12,8 +12,8 @@
     font-family: 'Gilroy';
     src: url('./fonts/Gilroy-Medium.eot');
     src: url('./fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Gilroy-Medium.woff') format('woff'),
-    url('./fonts/Gilroy-Medium.ttf') format('truetype');
+        url('./fonts/Gilroy-Medium.woff') format('woff'),
+        url('./fonts/Gilroy-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -22,8 +22,8 @@
     font-family: 'Gilroy';
     src: url('./fonts/Gilroy-Bold.eot');
     src: url('./fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Gilroy-Bold.woff') format('woff'),
-    url('./fonts/Gilroy-Bold.ttf') format('truetype');
+        url('./fonts/Gilroy-Bold.woff') format('woff'),
+        url('./fonts/Gilroy-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -31,7 +31,8 @@
 $accent-1: #00868A;
 $accent-2: #4FBFA5;
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -129,7 +130,9 @@ html, body {
     border-right: 1px solid rgba(196, 196, 196, 0.5);
 }
 
-.header__sn-a, .header__sn-a:active, .header__sn-a:hover {
+.header__sn-a,
+.header__sn-a:active,
+.header__sn-a:hover {
     color: $accent-1;
     text-decoration: none;
 }
@@ -483,7 +486,9 @@ html, body {
     line-height: 150%;
 }
 
-.mrc__case-1, .mrc__case-2, .mrc__case-3 {
+.mrc__case-1,
+.mrc__case-2,
+.mrc__case-3 {
     display: none;
 }
 
@@ -505,4 +510,93 @@ html, body {
 .mrc__ul li::marker {
     color: $accent-1;
     font-size: 22px;
+}
+
+.main__bottomContainer {
+    position: relative;
+    font-weight: 500;
+    font-family: Gilroy;
+    font-style: normal;
+    height: 600px;
+}
+
+.btc__bg {
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    background-color: rgba(0, 134, 138, 0.1);
+}
+
+.btc__container {
+    padding-top: 80px;
+}
+
+.btc__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 150%;
+    color: $accent-1;
+}
+
+.btc__grid-container {
+    margin-top: 60px;
+    display: grid;
+    justify-content: space-between;
+    column-gap: 25px;
+    grid-template-columns: repeat(4, 300px);
+}
+
+.btc__img {
+    width: 300px;
+    height: 230px;
+    position: relative;
+}
+
+.btc__case-1 .btc__img {
+    background-image: url(./img/special_offers/offer-1.svg);
+}
+
+.btc__case-2 .btc__img {
+    background-image: url(./img/special_offers/offer-2.svg);
+}
+
+.btc__case-3 .btc__img {
+    background-image: url(./img/special_offers/offer-3.svg);
+}
+
+.btc__case-4 .btc__img {
+    background-image: url(./img/special_offers/offer-4.svg);
+}
+
+.btc__chapter {
+    height: auto;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.btc__btn {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $accent-1;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btc__btn-title {
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+.btc__btn-arrow {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
 }
