@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     const slider = $(".slider").owlCarousel({
         loop: true,
         center: true,
@@ -15,15 +15,38 @@ $(document).ready(function(){
 });
 
 $('.rnc__case').hover(
-    function() {
-    $('.rnc__case').removeClass('rnc__case-active')
-    $(this).addClass('rnc__case-active')
-}, function() {
-    $('.rnc__case').removeClass('rnc__case-active')
-    setTimeout(() => { 
-        if ($('.rnc__case-active').length == 0) {
-            $('.rnc__case').first().addClass('rnc__case-active')
+    function () {
+        $('.rnc__case').removeClass('rnc__case-active')
+        $(this).addClass('rnc__case-active')
+    }
+)
+
+let midCont = [
+    ["mnlc__case-1", "mrc__case-1"],
+    ["mnlc__case-2", "mrc__case-2"],
+    ["mnlc__case-3", "mrc__case-3"]
+]
+
+let mass = false
+
+$('.mnlc__case').hover(
+    function () {
+        $('.mnlc__case').removeClass('mnlc__case-active')
+        $('.mrc__case').removeClass('mrc__case-active')
+        $(this).addClass('mnlc__case-active')
+        mass = document.getElementsByClassName('mnlc__case-active')[0].classList[1]
+        let active = false
+        for (let k = 0; k != midCont.length; k++) {
+            if (mass == midCont[k][0]) {
+                active = midCont[k][1]
+                break
+            }
         }
-    }, 1);
-}
+        active = "." + active
+        $(active).addClass('mrc__case-active')
+        // console.log(active);
+    },
+    function () {
+        console.log(1)
+    }
 )
