@@ -24,6 +24,6 @@ $('.rnc__case').hover(
         if ($('.rnc__case-active').length == 0) {
             $('.rnc__case').first().addClass('rnc__case-active')
         }
-    }, 10);
+    }, 1);
 }
 )
