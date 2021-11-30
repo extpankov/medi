@@ -45,8 +45,5 @@ $('.mnlc__case').hover(
         active = "." + active
         $(active).addClass('mrc__case-active')
         // console.log(active);
-    },
-    function () {
-        console.log(1)
     }
 )
