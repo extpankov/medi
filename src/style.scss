@@ -108,14 +108,15 @@ body {
     align-items: center;
 }
 
-.hb__button {
+.hb__button, .fbc__button {
     width: 270px;
     height: 40px;
     color: white;
     padding: 10px 15px 8px;
+    font-size: 16px;
 }
 
-.hb__button:hover, .ftc__btn:hover {
+.hb__button:hover, .ftc__btn:hover, .fbc__button:hover {
     background-color: $accent-2;
     transition: 0.2s;
 }
@@ -124,7 +125,7 @@ body {
     margin-right: 10px;
 }
 
-.header__sn {
+.header__sn, .fbc__sn {
     height: 100%;
     font-size: 32px;
     display: flex;
@@ -135,7 +136,8 @@ body {
 
 .header__sn-a,
 .header__sn-a:active,
-.header__sn-a:hover {
+.header__sn-a:hover,
+.fbc__sn-a {
     color: $accent-1;
     text-decoration: none;
 }
@@ -665,4 +667,45 @@ body {
     letter-spacing: 0.05em;
     margin-top: 15px;
     color: white;
+}
+
+.footer__bottom-container {
+    height: 91px;
+    margin-top: 76px;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-right: 0;
+    border-bottom: 0;
+    display: grid;
+    grid-template-columns: 350px 295px 330px repeat(4, 80px);
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.fbc__copyright {
+    margin: auto;
+    text-align: center;
+}
+
+.fbc__copyright-a {
+    text-decoration: none;
+    color: black;
+}
+
+.fbc__private-policy {
+    margin: auto;
+}
+
+.fbc__private-policy-a {
+    color: black;
+}
+
+.fbc__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(196, 196, 196, 0.5);
+    border-left: 1px solid rgba(196, 196, 196, 0.5);
 }
